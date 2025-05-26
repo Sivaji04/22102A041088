@@ -11,10 +11,10 @@ THIRD_PARTY_BASE_URL = "http://20.244.56.144/evaluation-service"
 BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ4MDY5NTkzLCJpYXQiOjE3NDgwNjkyOTMsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6ImYzOTg4NmIzLTdmMmYtNDQ2My1iMTJkLTk0YjY1ZmVjYWJlYyIsInN1YiI6Im5hbmRodTIzNzRAZ21haWwuY29tIn0sImVtYWlsIjoibmFuZGh1MjM3NEBnbWFpbC5jb20iLCJuYW1lIjoibmFuZGhhbmEiLCJyb2xsTm8iOiI5Mjc2MjJiYWwwMzEiLCJhY2Nlc3NDb2RlIjoid2hlUVV5IiwiY2xpZW50SUQiOiJmMzk4ODZiMy03ZjJmLTQ0NjMtYjEyZC05NGI2NWZlY2FiZWMiLCJjbGllbnRTZWNyZXQiOiJhTldObXRSdk1OZGRyaGptIn0.ucNtPvEBW-YPeTKT8O-cn7S2SKI6HYvr2L10gXGxS-c"
 
 ENDPOINT_MAPPING = {
-    'p': 'primes',   # Prime numbers endpoint
-    'f': 'fibo',     # Fibonacci numbers endpoint
-    'e': 'even',     # Even numbers endpoint
-    'r': 'rand'      # Random numbers endpoint
+    'p': 'primes',   
+    'f': 'fibo',     
+    'e': 'even',     
+    'r': 'rand'      
 }
 
 number_windows = {}
