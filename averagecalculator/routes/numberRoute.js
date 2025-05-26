@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const { getNumbersAndAverage } = require('../services/numberServices');
 
-// Route: GET /numbers/:numberid
 router.get('/:numberid', async (req, res) => {
   const numberid = req.params.numberid;
 
