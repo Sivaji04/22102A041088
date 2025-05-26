@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import StockPage from "./components/StockPage";
+import CorrelationHeatmap from "./components/CorrelationHeatmap";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const dummyStockData = {
+        AAPL: [150, 152, 153, 155, 154],
+        MSFT: [300, 302, 301, 303, 304],
+        GOOGL: [2700, 2710, 2720, 2730, 2740]
+    };
+
+    return (
+      <>
+        <div className="app">
+            <h1>React Stock Aggregator</h1>
+            <StockPage />
+            <CorrelationHeatmap stockData={dummyStockData} />
+        </div>
+        </>
+    );
 }
 
 export default App;
